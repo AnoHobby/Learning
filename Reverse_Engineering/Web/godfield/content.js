@@ -1,16 +1,13 @@
 (() => {
   const targetScriptSrc = "main.dart.js"; // 置き換え対象のスクリプト
-  let replaced = false; // すでに置き換えたかどうかのフラグ
 
   const observer = new MutationObserver((mutations) => {
-    if (replaced) return; // すでに置き換えていたらスキップ
-
-    mutations.forEach((mutation) => {
-      mutation.addedNodes.forEach((node) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
         if (node.tagName === "SCRIPT" && node.src.includes(targetScriptSrc)) {
           console.log(`Replacing script: ${node.src}`);
 
-          // 監視を一時停止
+          // 監視を停止（以後の変化を無視）
           observer.disconnect();
 
           // 元のスクリプトを削除
@@ -24,10 +21,10 @@
 
           console.log("Local script injected!");
 
-          replaced = true; // 置き換えフラグを設定
+          return; // 関数を即終了
         }
-      });
-    });
+      }
+    }
   });
 
   observer.observe(document.documentElement, { childList: true, subtree: true });
