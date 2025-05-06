@@ -14,7 +14,7 @@
 - できる限り安いパスタ([業務スーパーのやつ](https://www.gyomusuper.jp/onlineshop/products/detail/7529))
 - パスタが入る電気ケトル([安くてもいい](https://amzn.asia/d/8pdgmhG))
 - 湯切り兼皿に使う耐熱容器([電子レンジでパスタ作れるやつのでかいやつ](https://amzn.asia/d/jj1V8sK))
-- 耐熱のビニール袋([アイラップ](https://www.imcjpn.co.jp/product/a/001_001.html)が身近で耐熱温度が高い)
+- 耐熱のビニール袋穴があくまで使い回し([アイラップ](https://www.imcjpn.co.jp/product/a/001_001.html)が身近で耐熱温度が高い)
 - 耐熱の洗濯ばさみ([100均のステンレスのやつ](https://netshop.cando-web.co.jp/view/item/000000002820))
 - 味付け(超重要)
 ## 手順
