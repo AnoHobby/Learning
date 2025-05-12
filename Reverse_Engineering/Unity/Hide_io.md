@@ -95,6 +95,7 @@ Mod MenuのHookなども活用する人が増えた。
 - 主導権の取得
 - マップの指定/強制変更
 - iPhone落とし
+  
 自動化したりもしてる
 ## キック
 closeConnection
