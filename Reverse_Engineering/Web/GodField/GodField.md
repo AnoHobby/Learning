@@ -1,7 +1,6 @@
 # ゴッドフィールド
-※リンク付けたりは面倒なのでまだしてない。
 ## WEB版の改竄
-main.dart.jsの変更検知をバイパスし、ファイルを予め変更を加えておいたものに置き換える。
+main.dart.jsの[変更検知をバイパス](https://github.com/AnoHobby/Misc/blob/main/Reverse_Engineering/Web/Dart/main.dart.js.md)し、ファイルを予め変更を加えておいたものに[置き換える](https://github.com/AnoHobby/Misc/tree/main/Reverse_Engineering/Web/GodField/godfield_extension)。
 
 ゴッドフィールド自体は地味にアプデされていることがある。
 
@@ -9,7 +8,7 @@ main.dart.jsの変更検知をバイパスし、ファイルを予め変更を�
 
 それにより、これまでのJSではfirebase.auth()と書かれていた場所がgetAuth()と書かれているのが正しい状態となり、旧JSのmain.dart.jsで置き換えるとエラーが出るようになった。
 
-対策としては拡張機能などでローカルに保存しておいたv8のJSを読み込ませる必要がある。
+[対策](https://github.com/AnoHobby/Misc/tree/main/Reverse_Engineering/Web/GodField/godfield_extension_for_v8)としては拡張機能などでローカルに保存しておいたv8のJSを読み込ませる必要がある。
 
 ## 自動化とか
 スパムやゲーム開始の自動化は余裕で可能。
@@ -33,7 +32,7 @@ main.dart.jsの変更検知をバイパスし、ファイルを予め変更を�
 
 ブラウザのローカルのストレージに保存されていることは変わりないが、firebase関連のデータを削除すれば自動的に新しいユーザーIDが割り当てられ、同じ名前でもキックされた部屋に参加できる。
 
-しかし、やりすぎるとfirebaseの制限に引っかかるのでそうなった場合は別で回避する必要がある。
+しかし、やりすぎるとfirebaseの制限に引っかかるのでそうなった場合は別で[回避](https://github.com/AnoHobby/Misc/blob/main/Reverse_Engineering/Web/Firebase/Firebase.md)する必要がある。
 
 ## ミュート
 ミュートされる前に即抜けをすることで、ミュートを回避できる裏技的なのがある。
