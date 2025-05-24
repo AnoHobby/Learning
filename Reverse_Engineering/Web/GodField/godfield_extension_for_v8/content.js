@@ -25,26 +25,6 @@
 
           // Firebase 初期化
           const initScript = document.createElement("script");
-          initScript.textContent = `
-            window.addEventListener('load', function () {
-              if (!firebase.apps.length) {
-                firebase.initializeApp({
-                  apiKey: "YOUR_API_KEY",
-                  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-                  projectId: "YOUR_PROJECT_ID"
-                });
-                console.log("Firebase initialized");
-
-                // test log
-                if (firebase.firestore) {
-                  console.log("Firestore is available!");
-                } else {
-                  console.warn("Firestore is NOT available!");
-                }
-              }
-            });
-          `;
-          document.head.appendChild(initScript);
 
           // main.dart.js をローカルに差し替え
           const newScript = document.createElement("script");
